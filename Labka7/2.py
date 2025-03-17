@@ -68,6 +68,8 @@ while not done:
                 is_next = True
                 next_timer = pygame.time.get_ticks()  
             elif event.key == pygame.K_LEFT:
+                if is_paused:
+                    is_paused = False
                 count = (count - 1) % len(songs_yasss)
                 pygame.mixer.music.load(songs_yasss[count])
                 pygame.mixer.music.play()
