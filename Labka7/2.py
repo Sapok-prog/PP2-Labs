@@ -60,7 +60,9 @@ while not done:
                     is_paused = False
                     pygame.mixer.music.unpause()
             elif event.key == pygame.K_RIGHT:
-                count = (count + 1) % len(songs_yasss)
+                count += 1
+                if is_paused:
+                    is_paused = False
                 pygame.mixer.music.load(songs_yasss[count])
                 pygame.mixer.music.play()
                 is_next = True
