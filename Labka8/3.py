@@ -11,6 +11,7 @@ prevY1 = -1
 currentX1 = -1
 currentY1 = -1
 
+#делаем экран
 color = (255, 255, 255)
 screen.fill((0, 0, 0))
 
