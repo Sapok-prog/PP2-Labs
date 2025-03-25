@@ -16,7 +16,7 @@ score = 0
 count_of_coins = 0
 
 #background
-background = pygame.image.load(r"C:\Users\Amina\Downloads\back.png")
+background = pygame.image.load(r"C:\Users\Amina\Downloads\back_fone.png")
 background = pygame.transform.scale(background , (400 , 600))
 
 #game over
